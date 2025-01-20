@@ -101,20 +101,104 @@
     padding: 8px;
     width: 150px;
 }
+.standard-card{
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+}
 
+.kindar{
+text-align: center;
+box-sizing: border-box;
+border: 0.94px solid rgb(222, 245, 255);
+border-radius: 18.86px;
+box-shadow: inset 0px 0px 28.3px 0.94px rgba(0, 0, 0, 0.05);
+background: linear-gradient(180.00deg, rgb(222, 245, 255),rgba(255, 255, 255, 0) 40%),rgb(255, 255, 255);
+}
+.elementary{
+text-align: center;
+box-sizing: border-box;
+border: 0.94px solid rgb(255, 244, 220);
+border-radius: 18.86px;
 
+box-shadow: inset 0px 0px 28.3px 0.94px rgba(0, 0, 0, 0.05);
+background: linear-gradient(180.00deg, rgb(255, 244, 220),rgba(255, 255, 255, 0) 40%),rgb(255, 255, 255);
+}
+.middle{
+text-align: center;
+box-sizing: border-box;
+border: 0.94px solid rgb(242, 232, 255);
+border-radius: 18.86px;
 
+box-shadow: inset 0px 0px 28.3px 0.94px rgba(0, 0, 0, 0.05);
+background: linear-gradient(180.00deg, rgb(238, 225, 255),rgba(255, 255, 255, 0) 40%),rgb(255, 255, 255);
+}
 
+.standard-title1{
+    text-align: center;
+    font-size: 30px;
+    font-family: Quicksand;
+    font-weight: 700;
+}
+.standard-container{
+    margin-left: 100px;
+    margin-right: 100px;
+}
 
+.standard-img{
+    padding-left: 115px;
+    padding-right: 115px;
+    padding-top: 50px;
+}
+.standard-description{
+    padding-left: 35px;
+    padding-right: 35px;
+    color: rgb(128, 128, 128);
+    font-family: Raleway;
+    font-size: 15.09px;
+    font-weight: 500;
+}
+.read1{
+    color: tomato;
+}
+.read2{
+    color: green;
+}
+.read3{
+    color: violet;
+}
+.arrow-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-top: 20px;
+}
 
-
-
-
-
-
+.arrow{
+    text-align: center;
+    padding: 20px;
+    /* margin-top: 30px; */
+    /* width: 15px; */
+    background-color: goldenrod;
+    border-radius: 100%;
+    
+}
+.arrow2{
+    text-align: center;
+    padding: 20px;
+    /* margin-top: 30px; */
+    /* width: 15px; */
+    background-color: goldenrod;
+    border-radius: 50%;
+}
+.arrow-img{
+    
+}
 
 /* Media Query */
-@media screen and (max-width:576px) {
+@media screen  and (max-width:572px) {
     .navbar-title,.navbar-list,.btn-navbar{
         display: none;
     }
@@ -147,5 +231,15 @@
         font-weight: 600;
         font-size: 2rem;
         max-width: 100%;
+    }
+    .standard-card{
+        flex-direction: column;
+    }
+    .standard-title1{
+        max-width: 100%;
+        font-size: 1.5rem;
+    }
+    .arrow-container{
+        display: none;
     }
 }
