@@ -144,6 +144,9 @@ background: linear-gradient(180.00deg, rgb(238, 225, 255),rgba(255, 255, 255, 0)
 .standard-container{
     margin-left: 100px;
     margin-right: 100px;
+    background-image: url(assets/bg.png);
+    background-repeat: no-repeat;
+
 }
 
 .standard-img{
@@ -197,10 +200,139 @@ background: linear-gradient(180.00deg, rgb(238, 225, 255),rgba(255, 255, 255, 0)
     
 }
 
+.card1{
+    grid-area: card1;
+}
+.card2{
+    grid-area: card2;
+}
+.card3{
+    grid-area: card3;
+}
+.card4{
+    grid-area: card4;
+}
+.card5{
+    grid-area: card5;
+}
+.story-cart{
+    display: grid;
+    grid-template-areas: 
+    "card1 card2 card3"
+    "card1 card4 card5"
+    ;
+    gap: 15px;
+    max-width: 100%;
+}
+.standard-container{
+    margin-right: 100px;
+    /* margin:  auto; */
+}
+.card2,.card3,.card4,.card5{
+    border-radius:20px;
+    background-color: rgb(255, 255, 255);
+    background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: transform 0.3s ease;
+  width: 290.69px;
+  
+
+}
+.card1{
+    border-radius:20px;
+    background-color: rgb(255, 255, 255);
+    background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: transform 0.3s ease;
+    width: 540.27px;
+}
+.story-title{
+    text-align: center;
+    color: rgb(0, 0, 0);
+    font-family: Quicksand;
+    font-size: 2.8rem;
+    font-weight: 700;
+}
+.bg-color{
+    background-color: rgba(254, 163, 1, 0.3);
+    background: url(image),linear-gradient(0.00deg, rgba(254, 163, 1, 0.3),rgba(255, 255, 255, 0.3) 100%);
+    margin-left: 0;
+}
+.footer{
+    background-color: rgb(253, 1, 144);
+}
+.card1-title{
+color: rgb(0, 0, 0);
+font-family: Quicksand;
+font-size: 1.4rem;
+font-weight: 700;
+padding-left: 25px;
+padding-right: 25px;
+}
+.card1-description{
+color: rgb(0, 0, 0);
+font-family: Quicksand;
+font-size: 1rem;
+font-weight: 300;
+padding-left: 25px;
+padding-right: 25px;
+}
+.card2-btn,.card4-btn,.card5-btn{
+    background-color: rgb(149, 178, 38);
+    border-radius: 10px;
+    color: white;
+    padding: 10px;
+    border: none;
+}
+.card3-btn{
+    background-color: tomato;
+    border-radius: 10px;
+    color: white;
+    padding: 10px;
+    border: none;
+}
+.card2-btn,.card4-btn,.card5-btn,.card3-btn,.card5-description,.card4-description,.card3-description,.card2-description{
+    padding-left: 25px;
+    padding-right: 25px;
+}
+.btn2,.btn3,.btn4,.btn5{
+    padding-left: 25px;
+    padding-right: 25px;
+    margin-top: -25px;
+}
+.footer{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: white;
+    margin-top: 0 auto;
+}
+.footer li{
+    list-style: none;
+    color: white;
+}
+.footer li a{
+    text-decoration: none;
+    color: white;
+}
+.education-description{
+     width: 399.02px;;
+}
+footer{
+    margin: 0;
+}
+.about-title{
+    margin: 10px;
+}
 /* Media Query */
 @media screen  and (max-width:572px) {
     .navbar-title,.navbar-list,.btn-navbar{
         display: none;
+        
     }
     .three-dot{
         display: block;
