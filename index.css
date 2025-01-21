@@ -196,10 +196,20 @@ background: linear-gradient(180.00deg, rgb(238, 225, 255),rgba(255, 255, 255, 0)
     background-color: goldenrod;
     border-radius: 50%;
 }
-.arrow-img{
+.arrow-container img{
+    width: 15px;
     
 }
-
+.arrow2:hover{
+    background-color: tomato;
+    font-size: 20px;
+    font-weight: 700;
+}
+.arrow:hover{
+    background-color:violet;
+    font-size: 20px;
+    font-weight: 700;
+}
 .card1{
     grid-area: card1;
 }
@@ -218,11 +228,13 @@ background: linear-gradient(180.00deg, rgb(238, 225, 255),rgba(255, 255, 255, 0)
 .story-cart{
     display: grid;
     grid-template-areas: 
-    "card1 card2 card3"
-    "card1 card4 card5"
+    "card1 card1 card2 card3"
+    "card1 card1 card4 card5"
     ;
     gap: 15px;
-    max-width: 100%;
+    margin-left: 100px;
+    margin-right: 100px;
+    
 }
 .standard-container{
     margin-right: 100px;
@@ -236,7 +248,7 @@ background: linear-gradient(180.00deg, rgb(238, 225, 255),rgba(255, 255, 255, 0)
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   overflow: hidden;
   transition: transform 0.3s ease;
-  width: 290.69px;
+  
   
 
 }
@@ -248,7 +260,7 @@ background: linear-gradient(180.00deg, rgb(238, 225, 255),rgba(255, 255, 255, 0)
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   overflow: hidden;
   transition: transform 0.3s ease;
-    width: 540.27px;
+    
 }
 .story-title{
     text-align: center;
@@ -258,12 +270,16 @@ background: linear-gradient(180.00deg, rgb(238, 225, 255),rgba(255, 255, 255, 0)
     font-weight: 700;
 }
 .bg-color{
+    
     background-color: rgba(254, 163, 1, 0.3);
-    background: url(image),linear-gradient(0.00deg, rgba(254, 163, 1, 0.3),rgba(255, 255, 255, 0.3) 100%);
+    background: linear-gradient(0.00deg, rgba(254, 163, 1, 0.3),rgba(255, 255, 255, 0.3) 100%),url(assets/bg.png);
     margin-left: 0;
+    width: 100%;
 }
-.footer{
+footer{
+    margin: 0;
     background-color: rgb(253, 1, 144);
+    width: 100%;
 }
 .card1-title{
 color: rgb(0, 0, 0);
@@ -272,6 +288,21 @@ font-size: 1.4rem;
 font-weight: 700;
 padding-left: 25px;
 padding-right: 25px;
+}
+.card1 img{
+    width: 100%
+}
+.card2 img{
+    width: 100%
+}
+.card13 img{
+    width: 100%
+}
+.card4 img{
+    width: 100%
+}
+.card5 img{
+    width: 100%
 }
 .card1-description{
 color: rgb(0, 0, 0);
@@ -328,6 +359,22 @@ footer{
 .about-title{
     margin: 10px;
 }
+.view-btn{
+    background-color: black;
+    border-radius: 8px;
+    color: white;
+    text-align: center;
+    padding: 10px 20px 10px 20px;
+    margin-bottom: 50px;
+   
+}
+.x{
+    margin-top: 50px;
+    text-align: center;
+    margin-bottom: 50px;
+    
+    
+}
 /* Media Query */
 @media screen  and (max-width:572px) {
     .navbar-title,.navbar-list,.btn-navbar{
@@ -354,7 +401,10 @@ footer{
         text-align: center;
     }
     .banner-img{
-        max-width: 100%;
+        max-width:100%;
+    }
+    .banner-img img{
+        width: 300px;
     }
     .banner-info{
         max-width:calc( 100% - 20px );
@@ -374,4 +424,34 @@ footer{
     .arrow-container{
         display: none;
     }
+    /* Stories section */
+    .card1{
+        display: none;
+    }
+    .story-cart{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        margin: 0;
+        max-width:calc(100% - 20px);
+    }
+    .footer{
+        display: flex;
+        flex-direction: column;
+        
+    }
+
+    .features p{
+        text-align: left;
+        
+    }
+    .about1{
+        color: rgb(255, 255, 255);
+font-family: Quicksand;
+font-size: 20px;
+font-weight: 700;
+
+ }
+ .sp-about{
+    text-align: left;
+ }
 }
