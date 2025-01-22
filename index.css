@@ -2,10 +2,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
 html, body {
     margin: 0;
-    padding: 0;
+     padding: 0;
 }
 .display-flex{
     display: flex;
+}
+.navbar-title{
+    font-family: Quicksand;
 }
 .list-item{
     /* display: flex; */
@@ -71,6 +74,12 @@ html, body {
     align-items: center;
     gap: 50px;
     margin-left: 100px;
+}
+.banner-description{
+color: rgb(17, 17, 17);
+font-family: Quicksand;
+font-size: 20px;
+font-weight: 400;
 }
 .banner-title{
     font-weight: 700;
@@ -281,9 +290,10 @@ background: linear-gradient(180.00deg, rgb(238, 225, 255),rgba(255, 255, 255, 0)
     background-repeat: no-repeat;
 }
 footer{
-    margin: 0;
+    /* margin: 0; */
     background-color: rgb(253, 1, 144);
     width: 100%;
+    padding: 20px;
 }
 .card1-title{
 color: rgb(0, 0, 0);
@@ -346,6 +356,9 @@ padding-right: 25px;
     color: white;
     margin-top: 0 auto;
     /* background-color: tomato; */
+    padding-top: 100px;
+    padding-bottom: 100px;
+    margin-right: 10px;
 }
 .footer li{
     list-style: none;
@@ -356,11 +369,18 @@ padding-right: 25px;
     color: white;
 }
 .education-description{
-     width: 399.02px;;
+     width: 399.02px;
+     color: rgb(255, 255, 255);
+font-family: Quicksand;
+font-size: 15px;
+font-weight: 400;
 }
 
-.about-title{
+.about1{
     margin: 10px;
+    font-family: Quicksand;
+font-size: 15px;
+font-weight: 500;
 }
 .view-btn{
     background-color: black;
@@ -386,6 +406,15 @@ padding-right: 25px;
     border-radius: 10px;
     font-weight: 700;
     font-size: 20px;
+}
+.footer-link{
+    text-decoration: none;
+    color: white;
+    color: rgb(255, 255, 255);
+font-family: Quicksand;
+font-size: 15px;
+font-weight: 500;
+    
 }
 /* Media Query */
 @media screen  and (max-width:572px) {
@@ -460,7 +489,7 @@ padding-right: 25px;
         
     }
     .about1{
-        color: rgb(255, 255, 255);
+color: rgb(255, 255, 255);
 font-family: Quicksand;
 font-size: 20px;
 font-weight: 700;
@@ -479,8 +508,21 @@ font-weight: 700;
     margin: 0;
  }
  .footer{
-    display: flex;
-    flex-direction: column;
+        /* Optional padding for internal spacing */
+        display: flex;
+        flex-direction: column; /* Stack the sections vertically */
+        align-items: flex-start; /* Align content to the left */
+        margin-left: 0px;
+        margin-right: 0px;
+        max-width: 100%;
+    }
+    footer{
+        margin: 0;
+        padding: 0;
+        max-width: 100%;
+    }
+    .education-description{
+        max-width:calc(100% - 20px);
+    }
     
  }
-}
