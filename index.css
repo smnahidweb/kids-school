@@ -377,7 +377,7 @@ font-weight: 400;
 }
 
 .about1{
-    margin: 10px;
+    /* margin: 10px; */
     font-family: Quicksand;
 font-size: 15px;
 font-weight: 500;
@@ -399,13 +399,13 @@ font-weight: 500;
     
 }
 .marque{
-    background-color: tomato;
-    color:white;
+    background-color: rgb(253, 1, 144);
+    color:rgb(255, 254, 254);
     margin-left:100px;
     margin-right: 90px;
     border-radius: 10px;
     font-weight: 700;
-    font-size: 20px;
+    font-size: 10px;
 }
 .footer-link{
     text-decoration: none;
@@ -416,8 +416,14 @@ font-size: 15px;
 font-weight: 500;
     
 }
+.social-title{
+    font-family: Quicksand;
+font-size: 15px;
+font-weight: 700;
+margin-top: 2px;
+}
 /* Media Query */
-@media screen  and (max-width:572px) {
+@media screen  and (max-width:576px) {
     .navbar-title,.navbar-list,.btn-navbar{
         display: none;
     }
@@ -518,7 +524,7 @@ font-weight: 700;
     }
     footer{
         margin: 0;
-        padding: 0;
+        padding-right: 2px;
         max-width: 100%;
     }
     .education-description{
